@@ -1,7 +1,3 @@
-/* Larger screens: horizontal navigation and a 2-column course grid.
-   The base styles in small.css apply first; this file refines them
-   for widths of 640px and up. */
-
 @media screen and (min-width: 792px) {
     .site-header {
         flex-wrap: nowrap;

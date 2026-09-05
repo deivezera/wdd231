@@ -56,7 +56,6 @@ a {
     border: 0;
 }
 
-/* Header */
 .site-header {
     background: var(--color-primary);
     color: #ffffff;
@@ -85,7 +84,6 @@ a {
     line-height: 1.2;
 }
 
-/* Hamburger button */
 .menu-btn {
     background: transparent;
     border: none;
@@ -118,7 +116,6 @@ a {
     transform: translateY(-8px) rotate(-45deg);
 }
 
-/* Navigation (small screens: hidden until opened) */
 .nav-menu {
     flex-basis: 100%;
     display: none;
@@ -156,7 +153,7 @@ a {
     box-shadow: inset 4px 0 0 var(--color-accent);
 }
 
-/* Main */
+
 main {
     width: 100%;
     max-width: 1280px;
@@ -170,7 +167,7 @@ main h1 {
     margin: 0.5rem 0 1rem;
 }
 
-/* Sections */
+
 section {
     background: var(--color-card);
     border: 1px solid var(--color-border);
@@ -188,7 +185,6 @@ section h2 {
     padding-bottom: 0.5rem;
 }
 
-/* About: two separate cards, stacked on small screens */
 .about {
     display: block;
     background: none;
@@ -318,7 +314,6 @@ section h2 {
     background: var(--color-complete);
 }
 
-/* Credits total */
 .credits {
     margin-top: 1rem;
     font-weight: 700;
@@ -326,7 +321,6 @@ section h2 {
     text-align: right;
 }
 
-/* Footer */
 .site-footer {
     background: var(--color-primary-dark);
     color: #ffffff;
