@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Home page for Davi Szeremeta Zabroski, showcasing the Web and Computer Programming certificate courses for WDD 231 Frontend Web Development.">
+    <meta name="author" content="Davi Szeremeta Zabroski">
+    <title>Davi Szeremeta Zabroski | WDD 231 Home</title>
+    <link rel="icon" type="image/svg+xml" href="images/logo.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/course.js" defer></script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="logo">
+            <a href="index.html"><img src="images/logo.svg" alt="Site logo"></a>
+            <span class="logo-name">Davi Szeremeta Zabroski</span>
+        </div>
+        <button id="menu-btn" class="menu-btn" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-menu">
+            <span class="hamburger"></span>
+            <span class="hamburger"></span>
+            <span class="hamburger"></span>
+        </button>
+        <nav id="nav-menu" class="nav-menu">
+            <ul>
+                <li><a href="index.html" class="active" aria-current="page">Home</a></li>
+                <li><a href="#">Chamber</a></li>
+                <li><a href="#">Final</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Home</h1>
+
+        <section class="about">
+            <div class="about-text">
+                <h2>About Me</h2>
+                <p>Hello! I'm Davi Szeremeta Zabroski, a student working toward the Web and Computer Programming certificate in the Software Development degree at BYU-Idaho. I enjoy building responsive, accessible web experiences and exploring how design and code come together to solve real problems.</p>
+                <p>This page highlights the courses I'm taking as part of the certificate. You can filter them below to see all courses, or just the Web Development (WDD) or Computer Science (CSE) courses.</p>
+            </div>
+            <div class="about-photo">
+                <h2 class="photo-title">Student Photo</h2>
+                <img src="images/profile.jpg" alt="Portrait photo of Davi Szeremeta Zabroski">
+            </div>
+        </section>
+
+        <section class="courses">
+            <h2>Web and Computer Programming Certificate</h2>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All Courses</button>
+                <button class="filter-btn" data-filter="WDD">WDD Courses</button>
+                <button class="filter-btn" data-filter="CSE">CSE Courses</button>
+            </div>
+            <div id="course-grid" class="course-grid"></div>
+            <p id="credits" class="credits"></p>
+        </section>
+
+        <section class="location">
+            <h2>Where I'm From</h2>
+            <p>I'm from Paraná, Brazil. I'm passionate about technology and web development, and I'm excited to keep growing my skills through this program.</p>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="social">
+            <a href="https://github.com/deivezera" target="_blank" rel="noopener">
+                <svg viewBox="0 0 16 16" width="24" height="24" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+                <span class="visually-hidden">GitHub</span>
+            </a>
+            <a href="https://www.linkedin.com/in/davizabroski/" target="_blank" rel="noopener">
+                <svg viewBox="0 0 16 16" width="24" height="24" fill="currentColor" aria-hidden="true"><path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zM4.943 13.375V6.188H2.542v7.187h2.401zM3.742 5.21c.838 0 1.36-.555 1.36-1.25-.016-.71-.522-1.25-1.345-1.25-.823 0-1.36.54-1.36 1.25 0 .695.522 1.25 1.33 1.25h.015zM13.375 13.375v-4.02c0-2.154-1.15-3.157-2.685-3.157-1.237 0-1.792.68-2.102 1.158V6.188H6.188v7.187h2.4v-4.013c0-.215.016-.43.078-.584.173-.43.566-.875 1.227-.875.866 0 1.212.66 1.212 1.628v3.844h2.27z"/></svg>
+                <span class="visually-hidden">LinkedIn</span>
+            </a>
+            <a href="mailto:dzabroski@gmail.com">
+                <svg viewBox="0 0 16 16" width="24" height="24" fill="currentColor" aria-hidden="true"><path d="M2 2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2zm6 5.21L15.5 4H.5L8 7.21z"/></svg>
+                <span class="visually-hidden">Email</span>
+            </a>
+        </div>
+        <p>&copy; <span id="currentyear"></span> Davi Szeremeta Zabroski | Paraná, Brazil</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
