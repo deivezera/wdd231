@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Directory of member businesses of the Curitiba Chamber of Commerce, supporting local economic growth and community partnerships in Curitiba, Brazil.">
+    <meta name="author" content="Davi Szeremeta Zabroski">
+    <title>Curitiba Chamber of Commerce | Member Directory</title>
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Curitiba Chamber of Commerce | Member Directory">
+    <meta property="og:description" content="Explore 12 local businesses that power Curitiba's economy, from specialty coffee roasters and tech studios to eco tours and boutique real estate.">
+    <meta property="og:image" content="https://deivezera.github.io/wdd231/chamber/images/og-image.png">
+    <meta property="og:url" content="https://deivezera.github.io/wdd231/chamber/directory.html">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/theme.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/directory.js" defer></script>
+    <script>
+        (function () {
+            const saved = localStorage.getItem("curitiba-theme");
+            if (saved === "dark" || (!saved && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
+                document.documentElement.setAttribute("data-theme", "dark");
+            }
+        })();
+    </script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="logo">
+            <a href="#"><img src="images/favicon.svg" alt="Curitiba Chamber of Commerce logo"></a>
+            <span class="logo-name"><span>Curitiba Chamber</span><span class="logo-sub">of Commerce</span></span>
+        </div>
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+            <svg class="icon-sun" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+            <svg class="icon-moon" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+        <button id="menu-btn" class="menu-btn" aria-label="Open navigation" aria-expanded="false" aria-controls="nav-menu">
+            <span class="hamburger"></span>
+            <span class="hamburger"></span>
+            <span class="hamburger"></span>
+        </button>
+        <nav id="nav-menu" class="nav-menu">
+            <ul>
+                <li><a href="../">Home</a></li>
+                <li><a href="directory.html" class="active" aria-current="page">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="discover.html">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="directory-head">
+            <h1>Directory</h1>
+            <div class="view-toggle" role="group" aria-label="Directory view">
+                <button id="grid-view" class="view-btn active" type="button" aria-pressed="true">Grid</button>
+                <button id="list-view" class="view-btn" type="button" aria-pressed="false">List</button>
+            </div>
+        </div>
+        <p id="member-count" class="member-count"></p>
+        <section id="directory" class="directory-grid" aria-label="Chamber member directory"></section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-section footer-contact">
+            <h2 class="footer-title">Curitiba Chamber of Commerce</h2>
+            <p>Rua XV de Novembro 200, Centro<br>Curitiba, Paraná, 80020-310, Brazil</p>
+            <p><a href="mailto:contato@curitibachamber.com.br">contato@curitibachamber.com.br</a><br>+55 41 3000-2000</p>
+        </div>
+        <div class="footer-section footer-social">
+            <h2 class="visually-hidden">Social Media</h2>
+            <a href="https://www.youtube.com/" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor" aria-hidden="true"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8zM9.6 15.6V8.4L15.8 12l-6.2 3.6z"/></svg>
+                <span class="visually-hidden">YouTube</span>
+            </a>
+            <a href="https://twitter.com/" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor" aria-hidden="true"><path d="M18.9 1.2h3.7l-8.1 9.3L24 22.8h-7.5l-5.9-7.7-6.7 7.7H.2l8.7-9.9L0 1.2h7.7l5.3 7 6-7zm-1.3 19.4h2L6.6 3.3h-2.2l13.2 17.3z"/></svg>
+                <span class="visually-hidden">Twitter / X</span>
+            </a>
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor" aria-hidden="true"><path d="M0 1.15C0 .51.53 0 1.18 0h21.64C23.47 0 24 .51 24 1.15v21.7c0 .64-.53 1.15-1.18 1.15H1.18C.53 24 0 23.49 0 22.85V1.15zM7.41 20.04V8.93H3.63v11.11h3.78zM5.52 7.33c1.32 0 2.14-.87 2.14-1.96-.02-1.12-.82-1.97-2.12-1.97S3.4 4.25 3.4 5.37c0 1.09.82 1.96 2.1 1.96h.02zM20.4 20.04v-6.22c0-3.33-1.78-4.88-4.15-4.88-1.91 0-2.77 1.05-3.24 1.79V8.93H9.23c.05 1.1 0 11.11 0 11.11h3.78v-6.2c0-.33.02-.67.12-.9.27-.67.87-1.36 1.89-1.36 1.33 0 1.86 1.02 1.86 2.5v5.96h3.52z"/></svg>
+                <span class="visually-hidden">LinkedIn</span>
+            </a>
+        </div>
+        <div class="footer-section footer-dev">
+            <p>WDD 231 - Frontend Web Development<br>Davi Szeremeta Zabroski</p>
+            <p>&copy; <span id="currentyear"></span> Curitiba Chamber of Commerce</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+</body>
+</html>
