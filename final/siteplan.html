@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <meta name="author" content="Davi Szeremeta Zabroski" >
+    <meta
+      name="description"
+      content="Planning document for the Tibian Tech website, built as a responsive, accessible launch blueprint."
+    >
+    <title>Tibian Tech | Site Plan</title>
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+    <meta property="og:type" content="website" >
+    <meta property="og:title" content="Tibian Tech | Site Plan" >
+    <meta
+      property="og:description"
+      content="Planning document for the Tibian Tech website, built as a responsive, accessible launch blueprint."
+    >
+    <meta property="og:url" content="https://deivezera.github.io/wdd231/final/siteplan.html" >
+    <meta property="og:image" content="https://deivezera.github.io/wdd231/final/images/favicon.svg" >
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="siteplan.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Tibian Tech home">
+        <span>
+          <strong>Tibian Tech</strong>
+          <small>Site plan & launch blueprint</small>
+        </span>
+      </a>
+      <button
+        id="menu-btn"
+        class="menu-btn"
+        aria-label="Open navigation"
+        aria-expanded="false"
+        aria-controls="nav-menu"
+      >
+        <span class="hamburger"></span>
+        <span class="hamburger"></span>
+        <span class="hamburger"></span>
+      </button>
+      <nav id="nav-menu" class="site-nav" aria-label="Sections">
+        <ul>
+          <li><a href="#purpose">Purpose</a></li>
+          <li><a href="#scenarios">Scenarios</a></li>
+          <li><a href="#visuals">Visual system</a></li>
+          <li><a href="#wireframes">Wireframes</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Tibian Tech • Website planning document</p>
+          <h1>Built to help small businesses grow with clear technology and steady support.</h1>
+          <p class="lede">
+            The Tibian Tech website will present a friendly, professional partner for website creation,
+            data systems, AI setup, and recurring care without the jargon or over-engineering.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#wireframes">See the wireframes</a>
+          </div>
+        </div>
+        <aside class="hero-card" aria-label="Site overview">
+          <h2>Site name</h2>
+          <p><strong>Tibian Tech</strong></p>
+          <p>This name is direct, memorable, and rooted in the company’s identity while keeping the focus on modern technology support.</p>
+          <ul>
+            <li>Primary audience: SMB owners and operators</li>
+            <li>Primary CTA: Book a free consultation</li>
+            <li>Theme: trustworthy, modern, practical</li>
+          </ul>
+        </aside>
+      </section>
+
+      <section id="purpose" class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Site purpose</p>
+          <h2>Show how Tibian Tech turns tech complexity into calm, useful momentum.</h2>
+        </div>
+        <div class="card-grid">
+          <article class="card">
+            <h3>What the site will do</h3>
+            <p>
+              The site will introduce Tibian Tech as a practical technology partner for businesses that need
+              better websites, smoother operations, and guidance with AI and data.
+            </p>
+          </article>
+          <article class="card">
+            <h3>What visitors will find</h3>
+            <p>
+              Visitors will find clear service descriptions, a simple process, trust signals, and a clear next step to book a consultation.
+            </p>
+          </article>
+          <article class="card">
+            <h3>How success will be measured</h3>
+            <p>
+              The site will be judged by conversion focus, accessibility, mobile readiness, confidence-building content, and a consistent user journey.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="scenarios" class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Audience scenarios</p>
+          <h2>These questions guide the structure of every page.</h2>
+        </div>
+        <div class="card-grid scenarios">
+          <article class="card scenario-card">
+            <h3>“I need a better website, but I do not want a huge project.”</h3>
+            <p>The homepage and services overview will explain quick wins, right-sized website packages, and the path to launch.</p>
+          </article>
+          <article class="card scenario-card">
+            <h3>“I want AI help, but I am not sure where to start.”</h3>
+            <p>The AI and business systems sections will present approachable solutions with plain-language guidance and clear next steps.</p>
+          </article>
+          <article class="card scenario-card">
+            <h3>“I need someone dependable to keep things running.”</h3>
+            <p>Recurring services, support language, and the “talk → build → grow” process will reinforce confidence and long-term partnership.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="visuals" class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Visual system</p>
+          <h2>Color and type choices support a professional, trustworthy brand.</h2>
+        </div>
+        <div class="visual-grid">
+          <article class="card">
+            <h3>Color scheme</h3>
+            <div class="swatches">
+              <div class="swatch primary"><span>Primary</span><strong>#546498</strong></div>
+              <div class="swatch secondary"><span>Secondary</span><strong>#C8925B</strong></div>
+              <div class="swatch text"><span>Text</span><strong>#111827</strong></div>
+              <div class="swatch bg"><span>Background</span><strong>#F4F4F6</strong></div>
+            </div>
+            <p>
+              The deep blue will anchor navigation and call-to-action areas, while the warm metallic accent highlights important steps and cards.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Typography</h3>
+            <p class="type-demo heading">Inter Bold — headings, hero statements, and navigation labels</p>
+            <p class="type-demo body">Inter Regular — body copy, service descriptions, and supporting text</p>
+            <p>
+              Inter was chosen because it reads clearly on screens and supports a modern but calm interface for business audiences.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="wireframes" class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Wireframes</p>
+          <h2>The layout will feel approachable on mobile and confident on desktop.</h2>
+        </div>
+        <div class="wireframe-grid">
+          <article class="card wireframe-card">
+            <h3>Mobile</h3>
+            <div class="wireframe mobile">
+              <div class="wireframe-top">Header</div>
+              <div class="wireframe-hero">Hero + CTA</div>
+              <div class="wireframe-stack">
+                <div class="wireframe-item">Service card</div>
+                <div class="wireframe-item">Service card</div>
+              </div>
+              <div class="wireframe-footer">Footer</div>
+            </div>
+          </article>
+          <article class="card wireframe-card">
+            <h3>Desktop</h3>
+            <div class="wireframe desktop">
+              <div class="wireframe-top">Header</div>
+              <div class="wireframe-hero large">Hero + value prop</div>
+              <div class="wireframe-columns">
+                <div class="wireframe-item">Services</div>
+                <div class="wireframe-item">Proof + CTA</div>
+              </div>
+              <div class="wireframe-footer">Footer</div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+
+    </main>
+
+    <footer class="site-footer">
+      <p>WDD 231 - Frontend Web Development</p>
+      <p><a href="attributions.html">Attributions</a></p>
+    </footer>
+
+    <script src="siteplan.js"></script>
+  </body>
+</html>
