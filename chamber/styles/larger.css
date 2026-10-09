@@ -164,3 +164,70 @@
         flex-basis: 100px;
     }
 }
+
+@media screen and (min-width: 812px) {
+    .join-layout {
+        display: grid;
+        grid-template-columns: 3fr 2fr;
+        gap: 1.75rem;
+        align-items: start;
+    }
+
+    .membership-cards-section {
+        margin-top: 0;
+        position: sticky;
+        top: 1.5rem;
+    }
+
+    .membership-cards {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .summary-row {
+        flex-direction: row;
+        align-items: baseline;
+        gap: 1rem;
+    }
+
+    .summary-row dt {
+        flex: 0 0 12rem;
+    }
+}
+
+/* Discover: medium screens (641px - 1024px) */
+@media screen and (min-width: 641px) {
+    .interest-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-template-areas:
+            "c1 c1"
+            "c2 c3"
+            "c4 c5"
+            "c6 c7"
+            "c8 c8";
+    }
+}
+
+/* Discover: large screens (1025px and above) */
+@media screen and (min-width: 1025px) {
+    .interest-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        grid-template-areas:
+            "c1 c1 c2"
+            "c1 c1 c3"
+            "c4 c5 c6"
+            "c7 c8 c8";
+    }
+
+    .area-1 figure {
+        flex: 1 1 auto;
+    }
+
+    .area-1 figure img {
+        height: 100%;
+        min-height: 300px;
+    }
+
+    .fact-list {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+}
