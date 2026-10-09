@@ -23,7 +23,7 @@ function buildCard(place, index) {
             </figure>
             <address>${place.address}</address>
             <p class="card-text">${place.description}</p>
-            <button type="button" class="learn-more" data-index="${index}">Learn more</button>
+            <button type="button" class="card-link" data-index="${index}">Learn more &rarr;</button>
         </article>
     `;
 }
@@ -69,7 +69,7 @@ function showVisitMessage() {
 }
 
 grid.addEventListener("click", (event) => {
-    const button = event.target.closest(".learn-more");
+    const button = event.target.closest(".card-link");
     if (button) {
         openModal(Number(button.dataset.index));
     }

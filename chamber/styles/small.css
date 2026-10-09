@@ -1176,6 +1176,10 @@ html[data-theme="dark"] .membership.gold {
     box-shadow: var(--shadow-card);
 }
 
+.visit-notice[hidden] {
+    display: none;
+}
+
 .visit-notice p {
     margin: 0;
     font-weight: 500;
@@ -1274,26 +1278,6 @@ html[data-theme="dark"] .membership.gold {
     font-size: 0.9rem;
     color: var(--color-text);
     flex: 1 1 auto;
-}
-
-.learn-more {
-    align-self: flex-start;
-    font-family: var(--font-family);
-    font-weight: 700;
-    font-size: 0.9rem;
-    color: var(--color-primary);
-    background: var(--color-surface);
-    border: 2px solid var(--color-primary);
-    border-radius: 999px;
-    padding: 0.45rem 1.2rem;
-    cursor: pointer;
-    transition: background-color 0.2s ease, color 0.2s ease;
-}
-
-.learn-more:hover,
-.learn-more:focus {
-    background: var(--color-primary);
-    color: var(--color-surface);
 }
 
 /* Hover effect only on larger, pointer-capable screens */
